@@ -1,0 +1,26 @@
+title = "Alpaca Driver (Switch)"
+
+[network]
+ip_address = ""
+port = 55555
+
+[server]
+location = "EIOLC"
+verbose_driver_exceptions = true
+
+[switch]
+s1_ip = "192.168.1.122"
+s2_ip = "192.168.1.141"
+s3_ip = "192.168.1.142"
+s4_url = "ftdi://ftdi:232:A50285BI/1"
+s1_name = "dome shutter "
+s2_name = "dome rotate"
+s3_name = "lights"
+s4_name = "scope power"
+
+
+[logging]
+log_level = "INFO"
+log_to_stdout = false
+max_size_mb = 5
+num_keep_logs = 5

@@ -1,0 +1,8 @@
+[Unit]
+Description=ASCOM Switch device driver
+After=multi-user.target
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /usr/ascom/switch/app.py
+[Install]
+WantedBy=multi-user.target
